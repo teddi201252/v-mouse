@@ -11,6 +11,7 @@ $if linux {
 } $else $if windows {
 	#include "mouse_windows.h"
 } $else $if macos {
+	#include "mouse_macos.h"
 }
 
 // See .c files for comments.
