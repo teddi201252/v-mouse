@@ -24,3 +24,11 @@ struct Size screen_size() {
     };
     return size;
 }
+
+void hide_mouse() {
+    CGDisplayHideCursor(kCGNullDirectDisplay);
+}
+
+void show_mouse() {
+    CGDisplayShowCursor(kCGNullDirectDisplay);
+}

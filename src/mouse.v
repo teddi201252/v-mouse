@@ -34,6 +34,8 @@ pub type Size = C.Size
 fn C.get_mouse_pos() C.Position
 fn C.set_mouse_pos(int, int)
 fn C.screen_size() C.Size
+fn C.hide_mouse()
+fn C.show_mouse()
 
 @[inline]
 pub fn get_pos() (int, int) {
@@ -58,4 +60,14 @@ pub fn set_pos(x int, y int) {
 @[inline]
 pub fn screen_size() Size {
 	return C.screen_size()
+}
+
+@[inline]
+pub fn hide_mouse() {
+	C.hide_mouse()
+}
+
+@[inline]
+pub fn show_mouse() {
+	C.show_mouse()
 }

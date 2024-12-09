@@ -9,3 +9,7 @@ struct Position get_mouse_pos();
 void set_mouse_pos(int x, int y);
 // screen_size returns the width and height of the screen.
 struct Size screen_size();
+
+// Hide and show the mouse cursor.
+void hide_mouse();
+void show_mouse();
